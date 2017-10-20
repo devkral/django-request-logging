@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import logging
 import re
 
@@ -127,4 +128,3 @@ class LoggingMiddleware(MiddlewareMixin):
 
     def _chunked_to_max(self, msg):
         return msg[0:self.max_body_length]
-
